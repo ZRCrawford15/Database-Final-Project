@@ -6,16 +6,16 @@ app.set('view engine', 'html');
 app.set('port', 4962);
 
 //engine setup
-app.set('views', path.join(__dirname, 'views'));
+// app.set('views', path.join(__dirname, 'views'));
 
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
-const indexRouter = require('./routes/index');
+// const indexRouter = require('./routes/index');
 
-app.use('/', indexRouter);
+// app.use('/', indexRouter);
 
 var mysql = require('mysql');
 var pool = mysql.createPool({
